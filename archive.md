@@ -11,5 +11,3 @@ title: Blog Archive
     {% endfor %}
   </ul>
 {% endfor %}
-
-![buas logo](/images/buasLogo.png)
