@@ -222,4 +222,4 @@ Apart from saving and loading the new abilities using ImGui, I also added the th
   <source src="../assets/media/collisionResolution.mp4" type="video/mp4">
 </video>
 
-- Explain why I used Jolt, how it's crucial to the project
+![buas logo](/images/buasLogo.png)
