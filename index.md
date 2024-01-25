@@ -1,5 +1,3 @@
-Here you can say lots of fun things about your site.
-
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+Hello! 
+My name is Daniel Donkov, I am 2nd year student in Breda University of Applied Scineces.
+I'm part of the Creative Media & Game Technologies programme.
