@@ -1,6 +1,6 @@
 # Ability System for a Third Person Character Controller
 
-Developing an ability system has been something that I've wanted to do since I've started to get more and more comfortable with programming. In the past 8 weeks, I've been developing an ability system for a game with a third person character controller. Below you will see a short shwocase video of what the program offers:
+Developing an ability system has been something that I've wanted to do since I've started to get more and more comfortable with programming. In the past 8 weeks, I've developed an ability system for a game with a third person character controller. Below you will see a short showcase video of what the program offers:
 - A simple third-person character controller with a directional camera and a crosshair for aiming.
 - Three types of abilites that the demo character can use - Projectile, AOE and Blink/Dash  
 - The ability to tweak parameters to your liking for the different abilities
@@ -12,7 +12,7 @@ Developing an ability system has been something that I've wanted to do since I'v
 
 ## Integrating Jolt Physics into the project
 
-The main inspiration for this project was the battle-royale Spellbreak. Since the game was in 3D and allowed aiming with a crosshair, I had to use a 3D physics engine to replicate something similar. I decided to use [Jolt Physics](https://github.com/jrouwe/JoltPhysics). After looking into how to integrate it into my project, I started setting it up. The first thing was to properly initialize it:
+The main inspiration for this project was the battle-royale [Spellbreak](https://www.youtube.com/watch?v=6Qx7Y1cSUoM). Since the game was in 3D and allowed aiming with a crosshair, I had to use a 3D physics engine to replicate something similar. I decided to use [Jolt Physics](https://github.com/jrouwe/JoltPhysics). After looking into how to integrate it into my project, I started setting it up. The first thing was to properly initialize it:
 
 ```cpp
 // Configuration
@@ -153,18 +153,19 @@ Since we are now on the topic of making entities, let's look at how our training
     m_ContactListener.AddBodyToRegistry(physicsBody.GetPhysicsBody()->GetID().GetIndex(), physicsBody.GetEntity());
 }
  ```
-I frist make the entity, and then I create components which are tied to the entity. I make a transform, provided by the Bee engine that we use (developed by the teachers at BUAS), set its scale.
+I first make the entity, and then I create components which are tied to the entity. I make a transform, provided by Bee engine (developed by the teachers at BUAS) and set its scale.
 
 Since we want to also make the dummy a character, with health and all that, we need to give it the PlayerComponent where all of that data is stored, and initialize it's parameters.
 
- We then also make a component for the Physics Body, using the custom class that we made earlier. We then set it by giving it the proper parameters that Jolt has made for their Body class, and a Body Type from the ones that are pre-determined. We also make sure to update the transform to the position of the body since they are 2 sepratae things.
+We then also make a component for the Physics Body, using the custom class that we made earlier. We then set it by giving it the proper parameters that Jolt has made for their Body class, and a Body Type from the ones that are pre-determined. We also make sure to update the transform to the position of the body since they are 2 sepratae things.
 
- ## Creating the Player and the Camera
 
- One of the main parts of this project are the controllable character and its camera. The way we make the player is quite similar to how we make the Dummy, we make an entity to which we give a transform and a PlayerComponent, but instead of the PhysicsBody class, we give it something else - it uses the "CharacterController" class. 
+## Creating the Player and the Camera
 
- ```cpp
- class CharacterController
+One of the main parts of this project are the controllable character and its camera. The way we make the player is quite similar to how we make the Dummy, we make an entity to which we give a transform and a PlayerComponent, but instead of the PhysicsBody class, we give it something else - it uses the "CharacterController" class. 
+
+```cpp
+class CharacterController
 {
 public:
 	CharacterController() {}
