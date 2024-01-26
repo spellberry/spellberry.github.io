@@ -10,7 +10,7 @@ Developing an ability system has been something that I've wanted to do since I'v
   <source src="/videos/generalShowcase.mp4" type="video/mp4">
 </video>
 
-## Integrating Jolt Physics into the project
+<!-- ## Integrating Jolt Physics into the project
 
 The main inspiration for this project was the battle-royale Spellbreak. Since the game was in 3D and allowed aiming with a crosshair, I had to use a 3D physics engine to replicate something similar. I decided to use [Jolt Physics](https://github.com/jrouwe/JoltPhysics). After looking into how to integrate it into my project, I started setting it up. The first thing was to properly initialize it:
 
@@ -313,7 +313,7 @@ void Demo::CreateCrosshair(float size, const std::string& path)
     ...
 }
 ```
-The crosshair will come into play in the following section.
+The crosshair will come into play in the following section. -->
 
 ## The ability system and the abilities
 
@@ -357,31 +357,6 @@ struct AbilityAttributes
 The ability is just a simple struct with different variables that can be changed. This struct is used as a component to an entity, which can also have a physics body attached to it (in the case of the AOE and Projectile in this project). This struct is also part of an unordered map that the Player Component has, where the different abilities, that the players have, are stored.
 
 One of the variables inside the struct is the `m_Keybind`. When a new ability is created, this keybind is automatically set to a key on the keyboard, depending on the type of ability. At the moment, there is no easy way to give different inputs to the abilities, but is something that will be added in the future.
-
-Given the keybinds, the way that the abilities are cast works as follows:
-
-```cpp
-void AbilitySystem::HandleAbilities(float dt)
-{
-    for (auto [entity, transform, player] : Engine.ECS().Registry.view<Transform, PlayerComponent>().each())
-    {
-        for (auto& [abilityName, attributes] : player.m_Abilities)
-        {
-            if (attributes.m_CooldownTimer <= 0.0f && Engine.Input().GetKeyboardKeyOnce(attributes.m_Keybind))
-            {
-                CastAbility(transform, attributes, player);
-            }
-            else if (attributes.m_CooldownTimer > 0.0f)
-            {
-                attributes.m_CooldownTimer -= dt;
-            }
-
-        }
-    }
-    UpdateAbilityDamage();
-    HandleAbilityLifetime(dt);
-}
-```
 
 The ability system loops over the different abilities that the players have and checks if there is input for the corresponding ability. Then, the follwoing function is called:
 
@@ -645,7 +620,6 @@ Having worked on this project for the past 2 months was quite challenging but al
 
 
 ![buas logo](/images/buasLogo.png)
-
 <!-- ```cpp
 void Demo::CreatePlayer(const Vec3 position)
 ```
