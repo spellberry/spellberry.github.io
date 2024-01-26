@@ -159,7 +159,8 @@ Since we want to also make the dummy a character, with health and all that, we n
 
  We then also make a component for the Physics Body, using the custom class that we made earlier. We then set it by giving it the proper parameters that Jolt has made for their Body class, and a Body Type from the ones that are pre-determined. We also make sure to update the transform to the position of the body since they are 2 sepratae things.
 
- ## Creating the Player and the Camera
+
+## Creating the Player and the Camera
 
  One of the main parts of this project are the controllable character and its camera. The way we make the player is quite similar to how we make the Dummy, we make an entity to which we give a transform and a PlayerComponent, but instead of the PhysicsBody class, we give it something else - it uses the "CharacterController" class. 
 
