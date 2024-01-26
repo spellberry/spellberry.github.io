@@ -1,6 +1,6 @@
 # Ability System for a Third Person Character Controller
 
-Developing an ability system has been something that I've wanted to do since I've started to get more and more comfortable with programming. In the past 8 weeks, I've developed an ability system for a game with a third person character controller. Below you will see a short showcase video of what the program offers:
+Developing an ability system has been something that I've wanted to do since I've started to get more and more comfortable with programming. In the past 8 weeks, I've developed an ability system for a game with a third-person character controller. Below you will see a short showcase video of what the program offers:
 - A simple third-person character controller with a directional camera and a crosshair for aiming.
 - Three types of abilites that the demo character can use - Projectile, AOE and Blink/Dash  
 - The ability to tweak parameters to your liking for the different abilities
@@ -645,7 +645,7 @@ As things stand, the project has a pretty solid base for an ability system. Ther
 
 Having worked on this project for the past 2 months was quite challenging but also fun. I learned a lot about working with an external physics library, technical design of an ability system and much more. I learned new skills, both coding skills and organizational skills, which will be very valuable as I continue my journey of becmoing a game developer. I will most likely continue working on this project in my free time, because it has the potential to be something much, much better than it is at the moment. 
 
-
+![buas logo](/images/buasLogo.png)
 
 <!-- ```cpp
 void Demo::CreatePlayer(const Vec3 position)
