@@ -643,6 +643,9 @@ As things stand, the project has a pretty solid base for an ability system. Ther
 
 Having worked on this project for the past 2 months was quite challenging but also fun. I learned a lot about working with an external physics library, technical design of an ability system and much more. I learned new skills, both coding skills and organizational skills, which will be very valuable as I continue my journey of becmoing a game developer. I will most likely continue working on this project in my free time, because it has the potential to be something much, much better than it is at the moment. 
 
+
+![buas logo](/images/buasLogo.png)
+
 <!-- ```cpp
 void Demo::CreatePlayer(const Vec3 position)
 ```
@@ -860,4 +863,4 @@ Apart from saving and loading the new abilities using ImGui, I also added the th
   <source src="/videos/collisionResolution.mp4" type="video/mp4">
 </video>
 
-![buas logo](/images/buasLogo.png) -->
+ -->
