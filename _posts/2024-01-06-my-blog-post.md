@@ -1,4 +1,4 @@
-## Ability System for a Third Person Character Controller
+# Ability System for a Third Person Character Controller
 
 Developing an ability system has been something that I've wanted to do since I've started to get more and more comfortable with programming. In the past 8 weeks, I've been developing an ability system for a game with a third person character controller. Below you will see a short shwocase video of what the program offers:
 - A simple third-person character controller with a directional camera and a crosshair for aiming.
