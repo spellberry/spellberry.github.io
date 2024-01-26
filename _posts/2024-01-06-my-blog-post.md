@@ -314,8 +314,6 @@ void Demo::CreateCrosshair(float size, const std::string& path)
 ```
 The crosshair will come into play in the following section.
 
-
-
 ## The ability system and the abilities
 
 The technical design of the system drew some inspiration from Unreal's Gameplay Ability System, mainly for it's data driven approach.
